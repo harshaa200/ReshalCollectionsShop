@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #fff1f6, #fde2ea);
+  color: #4a2c3a;
+}
+
+/* HEADER */
+header {
+  padding: 22px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.order-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* FIXED ICON SIZE (NO ZOOM ISSUE) */
+.order-box a img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.order-box a img:hover {
+  transform: scale(1.1);
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px 60px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 46px;
+}
+
+/* GALLERY */
+.gallery {
+  padding: 40px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 992px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px 30px;
+  }
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 24px;
+  background: rgba(255,255,255,0.6);
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 420px;
+  position: relative;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.price {
+  color: #b84b7c;
+  font-size: 18px;
+  margin-bottom: 14px;
+}
+
+.modal-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.order-btn {
+  padding: 12px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+}

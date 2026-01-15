@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reshal Collection</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="brand">Reshal Collection</div>
+
+  <div class="order-box">
+    <span>For Orders:</span>
+
+    <a href="https://wa.me/918459240980" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <a href="https://www.instagram.com/reshalcollection" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram">
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Elegant Dresses for Every Occasion</h1>
+  <p>Every dress at Reshal Collection is curated with love and elegance.</p>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+
+  <!-- CARD 1 -->
+  <div class="card" onclick="openModal(
+    'Pastel Silk Saree',
+    '₹2,999',
+    ['Pink','Lavender','Mint Green'],
+    ['S','M','L','XL']
+  )">
+    <img src="images/rc111.jpg" alt="Product">
+    <div class="card-content">
+      <h3>Pastel Silk Saree</h3>
+      <p>Tap to view details</p>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="card" onclick="openModal(
+    'Floral Organza Saree',
+    '₹3,499',
+    ['White','Peach','Sky Blue'],
+    ['Free Size']
+  )">
+    <img src="images/rc222.webp" alt="Product">
+    <div class="card-content">
+      <h3>Floral Organza Saree</h3>
+      <p>Tap to view details</p>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="card" onclick="openModal(
+    'Banarasi Classic',
+    '₹5,999',
+    ['Red','Maroon','Gold'],
+    ['Free Size']
+  )">
+    <img src="images/rc333.jpg" alt="Product">
+    <div class="card-content">
+      <h3>Banarasi Classic</h3>
+      <p>Tap to view details</p>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="card" onclick="openModal(
+    'Pastel Silk Saree',
+    '₹2,999',
+    ['Pink','Lavender','Mint Green'],
+    ['S','M','L','XL']
+  )">
+    <img src="images/rc4.webp" alt="Product">
+    <div class="card-content">
+      <h3>Pastel Silk Saree</h3>
+      <p>Tap to view details</p>
+    </div>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="card" onclick="openModal(
+    'Floral Organza Saree',
+    '₹3,499',
+    ['White','Peach','Sky Blue'],
+    ['Free Size']
+  )">
+    <img src="images/rc5.jpg" alt="Product">
+    <div class="card-content">
+      <h3>Floral Organza Saree</h3>
+      <p>Tap to view details</p>
+    </div>
+  </div>
+
+  <!-- CARD 6 -->
+  <div class="card" onclick="openModal(
+    'Banarasi Classic',
+    '₹5,999',
+    ['Red','Maroon','Gold'],
+    ['Free Size']
+  )">
+    <img src="images/rc333.jpg" alt="Product">
+    <div class="card-content">
+      <h3>Banarasi Classic</h3>
+      <p>Tap to view details</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Reshal Collection · Crafted with elegance
+</footer>
+
+<!-- MODAL -->
+<div id="productModal" class="modal" onclick="closeOnOutside(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2 id="modalTitle"></h2>
+    <p class="price" id="modalPrice"></p>
+
+    <div class="detail">
+      <strong>Available Colours</strong>
+      <p id="modalColors"></p>
+    </div>
+
+    <div class="detail">
+      <strong>Available Sizes</strong>
+      <p id="modalSizes"></p>
+    </div>
+
+    <div class="modal-buttons">
+      <a id="whatsappOrder" class="order-btn whatsapp" target="_blank">
+        Order on WhatsApp
+      </a>
+      <a id="instagramOrder" class="order-btn instagram" target="_blank">
+        Order on Instagram
+      </a>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
